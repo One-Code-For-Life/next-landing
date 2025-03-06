@@ -18,7 +18,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative overflow-hidden bg-gradient-to-br from-white/95 to-gray-100/95 pt-[120px] dark:from-gray-900/30 dark:to-black md:pt-[130px] lg:pt-[160px]"
+        className="relative overflow-hidden bg-gradient-to-br from-white/95 to-[#fafafa] pt-[120px] dark:from-gray-900/30 dark:to-[#09090b] md:pt-[130px] lg:pt-[160px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
