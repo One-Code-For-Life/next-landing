@@ -27,6 +27,8 @@ reviews:
     base_branches:
       - "master"
       - "develop"
+      - "mcw/dev"
+      - "mcw"
   tools:
     ast-grep:
       rule_dirs:
