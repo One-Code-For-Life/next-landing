@@ -37,15 +37,6 @@ WORKDIR /app
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Create scheduler directory and log file
-RUN mkdir -p /app/scheduler /app/logs
-RUN touch /app/logs/scheduler.log
-RUN chown -R nextjs:nodejs /app/logs
-
-# Copy scheduler
-COPY --from=builder --chown=nextjs:nodejs /app/cron ./cron
-COPY --from=builder --chown=nextjs:nodejs /app/start.sh ./start.sh
-
 # copy assets and the generated standalone server
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
