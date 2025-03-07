@@ -58,23 +58,13 @@ const Header = () => {
                 href="/"
                 className="navbar-logo block w-fit py-3"
               >
-                {pathUrl !== "/" ? (
-                  <Image
-                    src="https://ucarecdn.com/a34f0e4a-4e8e-475a-b985-0162ca50662b/-/preview/50x50/"
-                    alt="logo"
-                    width="50"
-                    height="50"
-                    className="header-logo"
-                  />
-                ) : (
-                  <Image
-                    src="https://ucarecdn.com/a34f0e4a-4e8e-475a-b985-0162ca50662b/-/preview/50x50/"
-                    alt="logo"
-                    width="50"
-                    height="50"
-                    className="header-logo"
-                  />
-                )}
+                <Image
+                  src="https://ucarecdn.com/a34f0e4a-4e8e-475a-b985-0162ca50662b/-/preview/50x50/"
+                  alt="logo"
+                  width="50"
+                  height="50"
+                  className="header-logo"
+                />
               </Link>
             </div>
 
