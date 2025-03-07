@@ -30,7 +30,7 @@ const Hero = () => {
                 <h1 className="mb-6 text-3xl font-bold leading-[1] text-black dark:text-white sm:leading-[1.1] lg:text-4xl lg:leading-[1.2]">
                   <b className="gidugu-regular text-primary">MrCarWash</b>
                   <br />
-                  Solusi Manajemen Pencucian Mobil dan Motor Terlengkap
+                  Kelola Bisnis Car Wash Dalam Genggaman!
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-black dark:text-white sm:text-lg sm:leading-[1.44]">
                   MrCarWash bukan sekadar{" "}
