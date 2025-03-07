@@ -42,7 +42,7 @@ const PricingBox = ({ product }: { product: Price }) => {
           </div>
           <div className="flex w-full justify-self-end mt-auto">
             <Link href="https://reg.mrcarwash.app" className="w-full rounded-md bg-primary px-4 py-2 text-center text-base font-medium text-white transition duration-300 hover:bg-primary/90">
-              Purchase Now
+              Daftar Sekarang
             </Link>
           </div>
         </div>
