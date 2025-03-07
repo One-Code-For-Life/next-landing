@@ -1,5 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -58,7 +59,7 @@ const Header = () => {
                 className="navbar-logo block w-fit py-3"
               >
                 {pathUrl !== "/" ? (
-                  <img
+                  <Image
                     src="https://ucarecdn.com/a34f0e4a-4e8e-475a-b985-0162ca50662b/-/preview/50x50/"
                     alt="logo"
                     width="50"
@@ -66,7 +67,7 @@ const Header = () => {
                     className="header-logo"
                   />
                 ) : (
-                  <img
+                  <Image
                     src="https://ucarecdn.com/a34f0e4a-4e8e-475a-b985-0162ca50662b/-/preview/50x50/"
                     alt="logo"
                     width="50"
