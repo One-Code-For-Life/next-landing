@@ -17,10 +17,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Free and Open-Source",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
-    btn: "Learn More",
-    btnLink: "/#",
+    title: "Analitik & Laporan Mendalam",
+    paragraph: "Pantau kinerja bisnis Anda secara real-time dengan dashboard analitik yang komprehensif dan laporan yang mendalam. Dapatkan insight berharga untuk pengambilan keputusan yang lebih cerdas dan pertumbuhan bisnis yang berkelanjutan.",
   },
   {
     id: 2,
@@ -38,10 +36,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Modern Design",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
-    btn: "Learn More",
-    btnLink: "/#",
+    title: "Integrasi Esensial Lengkap",
+    paragraph: "MrCarWash secara mulus mengintegrasikan semua fitur penting untuk manajemen cuci mobil Anda, mulai dari point-of-sale dan Customer Relationship Management (CRM) hingga manajemen karyawan dan laporan keuangan. Kelola setiap aspek bisnis Anda dari satu platform terpusat.",
   },
   {
     id: 3,
@@ -91,10 +87,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "SaaS Starter Kit",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
-    btn: "Learn More",
-    btnLink: "/#",
+    title: "Desain Modern",
+    paragraph: "Rasakan antarmuka yang ramah pengguna dan intuitif, dirancang agar mudah digunakan di semua perangkat. MrCarWash menawarkan desain yang bersih dan modern, menyederhanakan operasional harian Anda dan meningkatkan pengalaman pengguna, baik untuk Anda maupun staf Anda.",
   },
   {
     id: 4,
@@ -124,10 +118,8 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "All Essential Integrations",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
-    btn: "Learn More",
-    btnLink: "/#",
+    title: "Paket Awal SaaS",
+    paragraph: "Mulai dengan cepat dan efisien menggunakan model Software as a Service (SaaS) dari MrCarWash. Nikmati pengaturan yang mudah, pembaruan otomatis, dan infrastruktur yang terukur, sehingga Anda dapat fokus mengembangkan bisnis cuci mobil Anda, bukan mengelola perangkat lunak.",
   },
 ];
 export default featuresData;

@@ -3,11 +3,11 @@ import SingleFaq from "./SingleFaq";
 
 const Faq = () => {
   return (
-    <section className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
+    <section className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-[#18181a] lg:pb-[50px] lg:pt-[120px]">
       <div className="container">
         <SectionTitle
           subtitle="FAQ"
-          title="Any Questions? Answered"
+          title="Pertanyaan yang Sering Diajukan"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           width="640px"
           center
@@ -15,32 +15,44 @@ const Faq = () => {
 
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
+
             <SingleFaq
-              question="How to use TailGrids?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Apa itu MrCarWash?"
+              answer="MrCarWash adalah platform manajemen bisnis online (SaaS) yang dirancang khusus untuk membantu pemilik bisnis pencucian mobil dan motor mengelola operasional mereka dengan lebih efisien dan efektif. Dari kasir hingga laporan keuangan, semua dalam satu platform."
+            />
+
+            <SingleFaq
+              question="Bisakah saya mengakses MrCarWash dari berbagai perangkat?"
+              answer="Tentu saja! MrCarWash adalah platform berbasis web yang dapat diakses melalui komputer, laptop, tablet, dan smartphone Anda.  Anda dapat mengelola bisnis dari mana saja dan kapan saja."
+            />
+
+            <SingleFaq
+              question="Apakah data bisnis saya aman di MrCarWash?"
+              answer="Keamanan data Anda adalah prioritas utama kami. MrCarWash menggunakan sistem keamanan terkini untuk melindungi data bisnis Anda dari akses yang tidak sah dan potensi kehilangan data."
             />
             <SingleFaq
-              question="How to download icons from LineIcons?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Bagaimana sistem harga langganan MrCarWash?"
+              answer="Kami menawarkan beberapa pilihan paket langganan yang fleksibel, disesuaikan dengan kebutuhan dan skala bisnis Anda. Silakan kunjungi halaman Harga kami untuk informasi detail mengenai paket dan harga."
             />
-            <SingleFaq
-              question="Is GrayGrids part of UIdeck?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
+
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Can I use this template for commercial project?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Bagaimana cara mendaftar MrCarWash?"
+              answer="Pendaftaran MrCarWash sangat mudah dan cepat. Cukup klik tombol 'Daftar Sekarang' di website kami dan ikuti langkah-langkahnya. Anda akan segera memiliki akun MrCarWash Anda sendiri."
             />
             <SingleFaq
-              question="Do you have plan to releasing Play Pro?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Apakah saya perlu instalasi khusus untuk menggunakan MrCarWash?"
+              answer="Tidak perlu instalasi apapun. MrCarWash adalah platform berbasis web, jadi Anda hanya perlu browser internet dan koneksi internet untuk menggunakannya."
             />
             <SingleFaq
-              question="Where and how to host this template?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Apakah MrCarWash terus dikembangkan dan diperbarui fiturnya?"
+              answer="Ya, kami terus berkomitmen untuk mengembangkan dan meningkatkan MrCarWash dengan fitur-fitur baru dan inovatif. Kami mendengarkan feedback dari pengguna untuk memastikan MrCarWash selalu relevan dan memenuhi kebutuhan bisnis cuci mobil dan motor."
+            />
+            <SingleFaq
+              question="Apakah ada biaya tersembunyi selain biaya langganan bulanan?"
+              answer="Tidak ada biaya tersembunyi. Biaya langganan bulanan yang tertera adalah biaya total yang Anda bayarkan untuk menggunakan MrCarWash sesuai dengan paket yang Anda pilih."
             />
           </div>
         </div>
