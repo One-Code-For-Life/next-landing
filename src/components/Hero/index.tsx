@@ -55,7 +55,7 @@ const Hero = () => {
                     <Link
                       href="https://demo.mrcarwash.app"
                       target="_blank"
-                      className="flex items-center gap-4 rounded-md bg-dark px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-gray-200 hover:text-dark dark:bg-gray-100 dark:text-dark dark:hover:bg-gray-700 dark:hover:text-white"
+                      className="flex items-center gap-4 rounded-md bg-dark px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-gray-800 hover:text-gray-100 dark:bg-gray-100 dark:text-dark dark:hover:bg-gray-500 dark:hover:text-white"
                     >
                       Demo Gratis
                     </Link>

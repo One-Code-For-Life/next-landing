@@ -1,13 +1,7 @@
 'use client'
-import { useTheme } from "next-themes";
 import Link from "next/link";
 
 const CallToAction = () => {
-
-  const { theme } = useTheme();
-
-  const circleFillColor = theme === "dark" ? "white" : "black";
-
   return (
     <section className="relative overflow-hidden bg-blue-500 py-20 lg:py-[115px]">
       <div className="container mx-auto z-50">
@@ -23,7 +17,7 @@ const CallToAction = () => {
                 </p>
                 <Link
                   href="https://dash.mrcarwash.app/register"
-                  className="inline-block rounded-md border border-transparent bg-green-500 px-7 py-3 text-base font-medium text-gray-800 transition hover:bg-gray-500"
+                  className="inline-block rounded-md border border-transparent bg-black px-7 py-3 text-base font-medium text-gray-100 transition hover:bg-gray-700"
                 >
                   Mulai Gunakan MrCarWash
                 </Link>
