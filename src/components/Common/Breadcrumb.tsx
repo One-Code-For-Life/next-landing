@@ -23,16 +23,16 @@ dark:from-gray-900/30 dark:to-[#09090b] relative z-10 overflow-hidden pb-[60px] 
                   {pageDescription}
                 </p>
 
-                <ul className="flex items-center justify-center gap-[10px]">
-                  <li>
+                <div className="flex items-center justify-center gap-[10px]">
+                  <div>
                     <Link
                       href="/"
                       className="text-dark flex items-center gap-[10px] text-base font-medium dark:text-white"
                     >
                       Home
                     </Link>
-                  </li>
-                  <li>
+                  </div>
+                  <div>
                     <p className="text-body-color flex items-center gap-[10px] text-base font-medium">
                       <span className="text-body-color dark:text-dark-6">
                         {" "}
@@ -40,8 +40,8 @@ dark:from-gray-900/30 dark:to-[#09090b] relative z-10 overflow-hidden pb-[60px] 
                       </span>
                       {pageName}
                     </p>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
