@@ -25,7 +25,7 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
                 />
               </Link>
               <div className="mb-10 w-full">
-                <p className="mb-8 max-w-[270px] text-base text-gray-7">
+                <p className="mb-8 max-w-[270px] text-base text-gray-900 dark:text-gray-100">
                   MrCarWash bukan sekadar Point of Sale (POS) biasa, melainkan platform manajemen bisnis pencucian mobil dan motor lengkap yang dirancang khusus untuk mengoptimalkan manajemen bisnis pencucian mobil dan motor Anda.
                 </p>
               </div>
@@ -33,14 +33,14 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
           </div>
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
-              <h4 className="mb-9 text-lg font-semibold text-white">
+              <h4 className="mb-9 text-lg font-semibold text-gray-900 dark:text-gray-100">
                 Tautan Terkait
               </h4>
               <ul>
                 <li>
                   <Link
                     href={registrationUrl}
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-800 dark:text-gray-200 hover:text-primary"
                   >
                     Daftar
                   </Link>
@@ -48,7 +48,7 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
                 <li>
                   <Link
                     href="/blogs"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-800 dark:text-gray-200 hover:text-primary"
                   >
                     Artikel
                   </Link>
@@ -56,7 +56,7 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
                 <li>
                   <Link
                     href={supportUrl}
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-800 dark:text-gray-200 hover:text-primary"
                   >
                     Bantuan
                   </Link>
@@ -64,7 +64,7 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
                 <li>
                   <Link
                     href="/about"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-800 dark:text-gray-200 hover:text-primary"
                   >
                     About
                   </Link>
@@ -83,13 +83,13 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
                 <div className="-mx-3 flex items-center justify-center">
                   <Link
                     href="/#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-white hover:underline"
                   >
                     Privacy policy
                   </Link>
                   <Link
                     href="/#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-white hover:underline"
                   >
                     Terms of service
                   </Link>
