@@ -15,7 +15,7 @@ export const metadata: Metadata = mergeMetadata(defaultMetadata, pageMetadata);
 const ContactPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Kontak Kami" />
+      <Breadcrumb pageName="Hubungi Kami" />
 
       <Contact />
     </>
