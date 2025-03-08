@@ -16,7 +16,7 @@ export const metadata: Metadata = mergeMetadata(defaultMetadata, pageMetadata);
 const ErrorPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Halaman Tidak Ditemukan" />
+      <Breadcrumb pageName="404" />
 
       <NotFound />
     </>

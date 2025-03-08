@@ -1,192 +1,107 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
+
+  const registrationUrl = process.env.NEXT_PUBLIC_MRCARWASH_REG || "https://reg.mrcarwash.app";
+
   return (
-    <section
-      id="about"
-      className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
-    >
-      <div className="container">
-        <div className="wow fadeInUp" data-wow-delay=".2s">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="mb-12 max-w-[540px] lg:mb-0">
-                <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Brilliant Toolkit to Build Next.js SaaS Websites.
-                </h2>
-                <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel discussions and roundtables led by subject
-                  matter experts.
-                  <br /> <br />
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel.
-                </p>
+    <section id="about" className="py-16 lg:py-24">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto mb-10 max-w-3xl text-center">
+          <h2 className="font-secondary mb-4 text-3xl font-bold text-gray-800 dark:text-white">
+            Tentang Kami - MrCarWash
+          </h2>
+          <p className="text-gray-600 dark:text-gray-100">
+            Selamat datang di MrCarWash, platform manajemen bisnis cuci mobil dan motor yang dirancang untuk membantu Anda meningkatkan efisiensi, produktivitas, dan keuntungan. Kami memahami tantangan yang dihadapi oleh pemilik bisnis cuci mobil dan motor, dan kami hadir dengan solusi terintegrasi yang mudah digunakan
+          </p>
+        </div>
 
-                <Link
-                  href="/#"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
-                >
-                  Know More
-                </Link>
-              </div>
-            </div>
+        <div className="grid grid-cols-1 gap-8">
+          <div>
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white font-secondary">
+              Visi dan Misi
+            </h3>
+            <p className="mb-4 text-gray-600 dark:text-gray-200">
+              <strong>Visi:</strong> Menjadi platform manajemen bisnis cuci
+              mobil dan motor nomor satu di Indonesia, dengan menyediakan solusi
+              inovatif dan terpercaya.
+            </p>
+            <p className="text-gray-600 dark:text-gray-200">
+              <strong>Misi:</strong>
+              <ul className="pl-4 list-outside list-disc">
+                <li>
+                  Memberikan alat dan fitur yang lengkap untuk mengelola
+                  operasional bisnis secara efektif.
+                </li>
+                <li>
+                  Meningkatkan pengalaman pelanggan dengan layanan yang lebih
+                  cepat dan terorganisir.
+                </li>
+                <li>
+                  Membantu pemilik bisnis meningkatkan pendapatan dan
+                  mengembangkan usaha mereka.
+                </li>
+                <li>
+                  Membangun komunitas bisnis cuci mobil dan motor yang solid dan
+                  saling mendukung.
+                </li>
+              </ul>
+            </p>
 
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
-                <div className="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
-                  <div
-                    className={`relative mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px] `}
-                  >
-                    <Image
-                      src="/images/about/about-image-01.jpg"
-                      alt="about image"
-                      fill
-                      className="h-full w-full object-cover object-center"
-                    />
-                  </div>
-                </div>
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white font-secondary mt-6">
+              Nilai-Nilai Kami:
+            </h3>
+            <p className="text-gray-600 dark:text-gray-200">
+              <ul className="pl-4 list-outside list-disc">
+                <li>
+                  <strong>Inovasi:</strong> Kami terus berinovasi untuk menghadirkan fitur-fitur terbaru yang sesuai dengan kebutuhan bisnis Anda.
+                </li>
+                <li>
+                  <strong>Kualitas:</strong> Kami berkomitmen untuk memberikan layanan dan dukungan terbaik kepada pelanggan kami.
+                </li>
+                <li>
+                  <strong>Kepercayaan:</strong> Kami membangun hubungan yang kuat dan saling percaya dengan pelanggan kami.
+                </li>
+                <li>
+                  <strong>Kemudahan:</strong> Kami merancang platform yang mudah digunakan dan dipahami oleh semua orang.
+                </li>
+                <li>
+                  <strong>Dukungan:</strong> Kami menyediakan dukungan pelanggan yang responsif dan siap membantu Anda kapan saja.
+                </li>
+              </ul>
+            </p>
 
-                <div className="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
-                  <div className="relative mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
-                    <Image
-                      src="/images/about/about-image-02.jpg"
-                      alt="about image"
-                      fill
-                      className="h-full w-full object-cover object-center"
-                    />
-                  </div>
-
-                  <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
-                    <div>
-                      <span className="block text-5xl font-extrabold text-white">
-                        09
-                      </span>
-                      <span className="block text-base font-semibold text-white">
-                        We have
-                      </span>
-                      <span className="block text-base font-medium text-white text-opacity-70">
-                        Years of experience
-                      </span>
-                    </div>
-                    <div>
-                      <span className="absolute left-0 top-0 -z-10">
-                        <svg
-                          width="106"
-                          height="144"
-                          viewBox="0 0 106 144"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect
-                            opacity="0.1"
-                            x="-67"
-                            y="47.127"
-                            width="113.378"
-                            height="131.304"
-                            transform="rotate(-42.8643 -67 47.127)"
-                            fill="url(#paint0_linear_1416_214)"
-                          />
-                          <defs>
-                            <linearGradient
-                              id="paint0_linear_1416_214"
-                              x1="-10.3111"
-                              y1="47.127"
-                              x2="-10.3111"
-                              y2="178.431"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop stopColor="white" />
-                              <stop
-                                offset="1"
-                                stopColor="white"
-                                stopOpacity="0"
-                              />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      </span>
-                      <span className="absolute right-0 top-0 -z-10">
-                        <svg
-                          width="130"
-                          height="97"
-                          viewBox="0 0 130 97"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect
-                            opacity="0.1"
-                            x="0.86792"
-                            y="-6.67725"
-                            width="155.563"
-                            height="140.614"
-                            transform="rotate(-42.8643 0.86792 -6.67725)"
-                            fill="url(#paint0_linear_1416_215)"
-                          />
-                          <defs>
-                            <linearGradient
-                              id="paint0_linear_1416_215"
-                              x1="78.6495"
-                              y1="-6.67725"
-                              x2="78.6495"
-                              y2="133.937"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop stopColor="white" />
-                              <stop
-                                offset="1"
-                                stopColor="white"
-                                stopOpacity="0"
-                              />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      </span>
-                      <span className="absolute bottom-0 right-0 -z-10">
-                        <svg
-                          width="175"
-                          height="104"
-                          viewBox="0 0 175 104"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect
-                            opacity="0.1"
-                            x="175.011"
-                            y="108.611"
-                            width="101.246"
-                            height="148.179"
-                            transform="rotate(137.136 175.011 108.611)"
-                            fill="url(#paint0_linear_1416_216)"
-                          />
-                          <defs>
-                            <linearGradient
-                              id="paint0_linear_1416_216"
-                              x1="225.634"
-                              y1="108.611"
-                              x2="225.634"
-                              y2="256.79"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop stopColor="white" />
-                              <stop
-                                offset="1"
-                                stopColor="white"
-                                stopOpacity="0"
-                              />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white font-secondary mt-6">
+              Keunggulan MrCarWash
+            </h3>
+            <p className="text-gray-600 dark:text-gray-200">
+              <ul className="pl-4 list-outside list-disc">
+                <li>
+                  <strong>Platform Terintegrasi:</strong> Kelola semua aspek bisnis Anda dalam satu platform, mulai dari operasional, karyawan, pelanggan, hingga keuangan.
+                </li>
+                <li>
+                  <strong>Fitur Lengkap:</strong> Nikmati berbagai fitur canggih seperti sistem kasir, manajemen pelanggan (CRM), laporan keuangan, dan banyak lagi.
+                </li>
+                <li>
+                  <strong>Mudah Digunakan:</strong> Antarmuka yang intuitif dan ramah pengguna, sehingga Anda dapat langsung menggunakannya tanpa kesulitan.
+                </li>
+                <li>
+                  <strong>Dukungan Pelanggan:</strong> Tim dukungan kami siap membantu Anda dengan cepat dan efisien.
+                </li>
+                <li>
+                  <strong>Harga Terjangkau:</strong> Paket berlangganan yang fleksibel dan sesuai dengan anggaran bisnis Anda.
+                </li>
+              </ul>
+            </p>
           </div>
+        </div>
+        <div className="mt-10 text-center">
+          <Link
+            href={registrationUrl}
+            className="inline-block rounded-md bg-blue-700 px-6 py-3 text-white transition-colors hover:bg-blue-800"
+          >
+            Mulai Gunakan MrCarWash
+          </Link>
         </div>
       </div>
     </section>

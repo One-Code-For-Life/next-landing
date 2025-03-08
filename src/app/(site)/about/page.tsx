@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Team from "@/components/Team";
 import { defaultMetadata } from "@/metadata/default";
 import { mergeMetadata } from "@/utils/metaData";
 import { Metadata } from "next";
@@ -19,7 +18,6 @@ const AboutPage = () => {
     <main>
       <Breadcrumb pageName="Tentang Kami" />
       <About />
-      <Team />
     </main>
   );
 };

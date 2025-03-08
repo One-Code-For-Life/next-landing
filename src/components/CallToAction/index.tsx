@@ -20,7 +20,7 @@ const CallToAction = () => {
                 </p>
                 <Link
                   href={registrationUrl}
-                  className="inline-block rounded-md border border-transparent bg-black px-7 py-3 text-base font-medium text-gray-100 transition hover:bg-gray-700"
+                  className="inline-block rounded-md border border-transparent bg-[#111928] px-7 py-3 text-base font-medium text-gray-100 transition hover:bg-gray-700"
                 >
                   Mulai Gunakan MrCarWash
                 </Link>
