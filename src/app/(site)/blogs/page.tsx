@@ -1,20 +1,26 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { defaultMetadata } from "@/metadata/default";
 import { getAllPosts } from "@/utils/markdown";
+import { mergeMetadata } from "@/utils/metaData";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title:
-    "Blog Grids | Play SaaS Starter Kit and Boilerplate for Next.js",
-  description: "Blog grids page description",
+const pageMetadata: Metadata = {
+  title: "Artikel | MrCarWash - Tips & Informasi Bisnis Cuci Mobil & Motor",
+  description:
+    "Baca artikel dan tips terbaru tentang manajemen bisnis cuci mobil dan motor, tren industri, dan informasi bermanfaat lainnya dari MrCarWash.",
+
 };
+
+export const metadata: Metadata = mergeMetadata(defaultMetadata, pageMetadata);
+
 
 const Blog = () => {
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
 
   return (
     <>
-      <Breadcrumb pageName="Blog Grids" />
+      <Breadcrumb pageName="Daftar Artikel" />
 
       <section className="pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
         <div className="container">

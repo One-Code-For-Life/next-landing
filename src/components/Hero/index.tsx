@@ -12,6 +12,9 @@ const Hero = () => {
   const lightModeLogoUrl = 'https://ucarecdn.com/50a59e34-b7bc-42a1-9e8f-592117047ddb/-/preview/1080x720/';
   const darkModeLogoUrl = 'https://ucarecdn.com/7197b9a2-27a8-4ab6-a3e2-8ccbc9de37e3/-/preview/1080x720/';
 
+  const registrationUrl = process.env.NEXT_PUBLIC_MRCARWASH_REG || "https://reg.mrcarwash.app";
+  const demoUrl = process.env.NEXT_PUBLIC_MRCARWASH_DEMO || "https://demo.mrcarwash.app";
+
   const logoSrc = theme === 'dark' ? darkModeLogoUrl : lightModeLogoUrl;
 
   return (
@@ -27,9 +30,8 @@ const Hero = () => {
                 className="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-6 text-3xl font-bold leading-[1] text-black dark:text-white sm:leading-[1.1] lg:text-4xl lg:leading-[1.2]">
-                  <b className="gidugu-regular text-primary">MrCarWash</b>
-                  <br />
+                <Image className="mx-auto pb-4" src="https://ucarecdn.com/71baba41-88cc-4985-8cc3-046fdbee6436/-/preview/500x500/" alt="MrCarWash Logo" width={100} height={100} />
+                <h1 className="mb-6 text-3xl font-bold leading-[1] text-black dark:text-white sm:leading-[1.1] lg:text-4xl lg:leading-[1.2] font-secondary">
                   Kelola Bisnis Car Wash Dalam Genggaman!
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-black dark:text-white sm:text-lg sm:leading-[1.44]">
@@ -45,7 +47,7 @@ const Hero = () => {
                 <ul className="mb-4 flex flex-wrap items-center justify-center gap-5">
                   <li>
                     <Link
-                      href="https://dash.mrcarwash.app/register"
+                      href={registrationUrl}
                       className="inline-flex items-center justify-center rounded-md bg-blue-600 px-7 py-[14px] text-center text-base font-medium text-white shadow-1 transition duration-300 ease-in-out hover:bg-blue-900"
                     >
                       Mulai Optimalkan Bisnis
@@ -53,7 +55,7 @@ const Hero = () => {
                   </li>
                   <li>
                     <Link
-                      href="https://demo.mrcarwash.app"
+                      href={demoUrl}
                       target="_blank"
                       className="flex items-center gap-4 rounded-md bg-dark px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-gray-800 hover:text-gray-100 dark:bg-gray-100 dark:text-dark dark:hover:bg-gray-500 dark:hover:text-white"
                     >

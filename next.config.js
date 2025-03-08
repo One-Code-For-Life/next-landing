@@ -5,7 +5,11 @@ const nextConfig = {
   poweredByHeader: false,
   generateEtags: true,
   images: {
-    domains: ['ucarecdn.com'],
+    remotePatterns: [
+      {
+        hostname: 'ucarecdn.com',
+      },
+    ],
   },
 };
 

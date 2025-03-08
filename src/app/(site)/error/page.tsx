@@ -1,10 +1,16 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import NotFound from "@/components/NotFound";
+import { defaultMetadata } from "@/metadata/default";
+import { mergeMetadata } from "@/utils/metaData";
 import { Metadata } from "next";
+const pageMetadata: Metadata = {
+  title: "Error | MrCarWash",
+  description:
+    "Maaf, halaman yang Anda cari tidak dapat ditemukan. Silakan coba lagi atau kembali ke halaman utama.",
 
-export const metadata: Metadata = {
-  title: "404 Page | Play SaaS Starter Kit and Boilerplate for Next.js",
 };
+
+export const metadata: Metadata = mergeMetadata(defaultMetadata, pageMetadata);
 
 const ErrorPage = () => {
   return (
