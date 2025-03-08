@@ -25,7 +25,7 @@ WORKDIR /app
 COPY . .
 RUN npx prisma generate
 RUN npm run build
-
+RUN npm run postbuild
 # Stage 3: Run the production
 FROM ${NODE} AS runner
 RUN apk update \
