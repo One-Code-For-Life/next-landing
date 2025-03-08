@@ -11,13 +11,7 @@ import { defaultMetadata } from '@/metadata/default';
 import { mergeMetadata } from "@/utils/metaData";
 import { Metadata } from "next";
 
-const pageMetadata: Metadata = {
-  title: "Ganting Judul",
-  description: "Welcome to the home page of my awesome application.",
-  openGraph: {
-    images: "/home-og-image.png",
-  },
-};
+const pageMetadata: Metadata = {};
 
 export const metadata: Metadata = mergeMetadata(defaultMetadata, pageMetadata);
 
