@@ -6,6 +6,8 @@
 .pnp.js
 .yarn/install-state.gz
 .nixpacks
+./public/sitemap.xml
+./public/robots.txt
 
 # testing
 /coverage
