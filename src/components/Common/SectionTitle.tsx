@@ -20,7 +20,7 @@ const SectionTitle = ({
         style={{ maxWidth: width }}
       >
         {subtitle && (
-          <span className="mb-2 block text-lg font-semibold text-primary font-secondary">
+          <span className="mb-2 block text-lg font-semibold text-blue-700 dark:text-blue-500 font-secondary">
             {subtitle}
           </span>
         )}

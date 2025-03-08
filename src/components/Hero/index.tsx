@@ -30,13 +30,18 @@ const Hero = () => {
                 className="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
                 data-wow-delay=".2s"
               >
-                <Image className="mx-auto pb-4" src="https://ucarecdn.com/71baba41-88cc-4985-8cc3-046fdbee6436/-/preview/500x500/" alt="MrCarWash Logo" width={100} height={100} />
+                <Image className="mx-auto pb-4" src="https://ucarecdn.com/71baba41-88cc-4985-8cc3-046fdbee6436/-/preview/500x500/"
+                  alt="MrCarWash Logo"
+                  width={100}
+                  height={100}
+                  priority
+                />
                 <h1 className="mb-6 text-3xl font-bold leading-[1] text-black dark:text-white sm:leading-[1.1] lg:text-4xl lg:leading-[1.2] font-secondary">
                   Kelola Bisnis Pencucian Mobil & Motor Dalam Genggaman!
                 </h1>
-                <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-black dark:text-white sm:text-lg sm:leading-[1.44]">
+                <p className="mx-auto mb-9 max-w-xl text-base font-base text-black dark:text-white sm:text-lg">
                   MrCarWash bukan sekadar{" "}
-                  <i className="font-semibold">Point of Sale</i> (POS) biasa,
+                  <span className="font-semibold italic">Point of Sale</span> (POS) biasa,
                   melainkan platform manajemen bisnis pencucian mobil dan motor
                   lengkap yang dirancang khusus untuk mengoptimalkan manajemen
                   bisnis pencucian mobil dan motor Anda. Bayangkan, mengelola
