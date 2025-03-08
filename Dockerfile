@@ -11,11 +11,17 @@ RUN npm ci
 
 # Stage 2: Build the app
 FROM ${NODE} AS builder
-ARG DATABASE_URL
-ENV DATABASE_URL=$DATABASE_URL
+ENV NEXT_TELEMETRY_DISABLED=1
 ARG NEXT_PUBLIC_APP_URL
 ENV NEXT_PUBLIC_APP_URL=$NEXT_PUBLIC_APP_URL
-ENV NEXT_TELEMETRY_DISABLED=1
+ARG NEXT_PUBLIC_MRCARWASH_API
+ENV NEXT_PUBLIC_MRCARWASH_API=$NEXT_PUBLIC_MRCARWASH_API
+ARG NEXT_PUBLIC_SUPPORT_URL
+ENV NEXT_PUBLIC_SUPPORT_URL=$NEXT_PUBLIC_SUPPORT_URL
+ARG NEXT_PUBLIC_MRCARWASH_REG
+ENV NEXT_PUBLIC_MRCARWASH_REG=$NEXT_PUBLIC_MRCARWASH_REG
+ARG NEXT_PUBLIC_MRCARWASH_DEMO
+ENV NEXT_PUBLIC_MRCARWASH_DEMO=$NEXT_PUBLIC_MRCARWASH_DEMO
 
 RUN apk update \
     && apk add --no-cache openssl libc6-compat \
@@ -23,7 +29,6 @@ RUN apk update \
 
 WORKDIR /app
 COPY . .
-RUN npx prisma generate
 RUN npm run build
 RUN npm run postbuild
 # Stage 3: Run the production
@@ -41,7 +46,6 @@ RUN adduser --system --uid 1001 nextjs
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
 
 USER nextjs
 ARG HOSTNAME="0.0.0.0"
