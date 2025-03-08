@@ -60,7 +60,7 @@ const TermsOfService = () => {
 
                 <h2 className="text-2xl font-semibold mt-6">7. Penafian Jaminan</h2>
                 <p>
-                    PLATFORM MR.CARWASH DISEDIAKAN "SEBAGAIMANA ADANYA" DAN "SEBAGAIMANA TERSEDIA"
+                    PLATFORM MR.CARWASH DISEDIAKAN &apos;SEBAGAIMANA ADANYA&apos; DAN &apos;SEBAGAIMANA TERSEDIA&apos;
                     TANPA JAMINAN APAPUN.
                 </p>
 
