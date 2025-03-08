@@ -5,6 +5,7 @@ const Footer = () => {
 
   const supportUrl = process.env.NEXT_PUBLIC_SUPPORT_URL || "https://support.mrcarwash.com";
   const registrationUrl = process.env.NEXT_PUBLIC_MRCARWASH_REG || "https://reg.mrcarwash.app";
+
   return (
     <footer
       className="wow fadeInUp relative z-10 bg-gradient-to-tl from-white/95 to-[#fafafa]

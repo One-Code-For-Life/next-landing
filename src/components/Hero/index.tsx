@@ -12,6 +12,9 @@ const Hero = () => {
   const lightModeLogoUrl = 'https://ucarecdn.com/50a59e34-b7bc-42a1-9e8f-592117047ddb/-/preview/1080x720/';
   const darkModeLogoUrl = 'https://ucarecdn.com/7197b9a2-27a8-4ab6-a3e2-8ccbc9de37e3/-/preview/1080x720/';
 
+  const registrationUrl = process.env.NEXT_PUBLIC_MRCARWASH_REG || "https://reg.mrcarwash.app";
+  const demoUrl = process.env.NEXT_PUBLIC_MRCARWASH_DEMO || "https://demo.mrcarwash.app";
+
   const logoSrc = theme === 'dark' ? darkModeLogoUrl : lightModeLogoUrl;
 
   return (
@@ -44,7 +47,7 @@ const Hero = () => {
                 <ul className="mb-4 flex flex-wrap items-center justify-center gap-5">
                   <li>
                     <Link
-                      href="https://dash.mrcarwash.app/register"
+                      href="{registrationUrl}"
                       className="inline-flex items-center justify-center rounded-md bg-blue-600 px-7 py-[14px] text-center text-base font-medium text-white shadow-1 transition duration-300 ease-in-out hover:bg-blue-900"
                     >
                       Mulai Optimalkan Bisnis
@@ -52,7 +55,7 @@ const Hero = () => {
                   </li>
                   <li>
                     <Link
-                      href="https://demo.mrcarwash.app"
+                      href={demoUrl}
                       target="_blank"
                       className="flex items-center gap-4 rounded-md bg-dark px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-gray-800 hover:text-gray-100 dark:bg-gray-100 dark:text-dark dark:hover:bg-gray-500 dark:hover:text-white"
                     >

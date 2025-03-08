@@ -1,9 +1,12 @@
-'use client'
 import Link from "next/link";
 
 const CallToAction = () => {
+
+  const registrationUrl = process.env.NEXT_PUBLIC_MRCARWASH_REG || "https://reg.mrcarwash.app";
+
   return (
-    <section className="relative overflow-hidden bg-blue-700 py-20 lg:py-[115px]">
+    <section className="relative overflow-hidden bg-gradient-to-tl from-blue-700 to-blue-800
+ py-20 lg:py-[115px]">
       <div className="container mx-auto z-50">
         <div className="relative overflow-hidden z-100">
           <div className="-mx-4 flex flex-wrap items-stretch">
@@ -16,7 +19,7 @@ const CallToAction = () => {
                   Tidak perlu lagi repot mengelola bisnis cuci mobil secara manual. MrCarWash hadir sebagai solusi lengkap untuk menyederhanakan operasional, meningkatkan efisiensi, dan memaksimalkan keuntungan Anda.
                 </p>
                 <Link
-                  href="https://dash.mrcarwash.app/register"
+                  href={registrationUrl}
                   className="inline-block rounded-md border border-transparent bg-black px-7 py-3 text-base font-medium text-gray-100 transition hover:bg-gray-700"
                 >
                   Mulai Gunakan MrCarWash
