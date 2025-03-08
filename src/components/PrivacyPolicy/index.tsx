@@ -66,12 +66,12 @@ const PrivacyPolicy = () => {
                     Kami menggunakan <i>cookies</i> untuk meningkatkan pengalaman pengguna. Anda dapat mengatur preferensi <i>cookies</i> melalui pengaturan <i>browser</i> Anda.
                 </p>
 
-                <h2 className="text-2xl font-semibold mt-8 mb-4">8. Perubahan Kebijakan Privasi</h2>
+                <h2 className="text-2xl font-semibold mt-8 mb-4">7. Perubahan Kebijakan Privasi</h2>
                 <p className="leading-relaxed">
                     Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan akan diumumkan melalui situs web atau komunikasi lainnya.
                 </p>
 
-                <h2 className="text-2xl font-semibold mt-8 mb-4">9. Hubungi Kami</h2>
+                <h2 className="text-2xl font-semibold mt-8 mb-4">8. Hubungi Kami</h2>
                 <p className="leading-relaxed">
                     Jika Anda memiliki pertanyaan atau kekhawatiran terkait kebijakan privasi ini, silakan hubungi kami melalui:
                 </p>
