@@ -29,7 +29,7 @@ dark:from-gray-900/30 dark:to-[#09090b] relative z-10 overflow-hidden pb-[60px] 
                       href="/"
                       className="text-dark flex items-center gap-[10px] text-base font-medium dark:text-white"
                     >
-                      Home
+                      Halaman Utama
                     </Link>
                   </li>
                   <li>

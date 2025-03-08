@@ -1,18 +1,23 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Faq from "@/components/Faq";
 import Pricing from "@/components/Pricing";
+import { defaultMetadata } from "@/metadata/default";
+import { mergeMetadata } from "@/utils/metaData";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title:
-    "Pricing Page | Play SaaS Starter Kit and Boilerplate for Next.js",
-  description: "This is pricing page description",
+const pageMetadata: Metadata = {
+  title: "Harga | MrCarWash - Platform Manajemen Cuci Mobil & Motor",
+  description:
+    "Temukan paket harga MrCarWash yang sesuai dengan kebutuhan bisnis cuci mobil dan motor Anda. Kelola bisnis Anda dengan fitur lengkap dan harga terjangkau.",
+
 };
+
+export const metadata: Metadata = mergeMetadata(defaultMetadata, pageMetadata);
 
 const PricingPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Pricing Page" />
+      <Breadcrumb pageName="Harga" />
       <Pricing />
       <Faq />
     </>
