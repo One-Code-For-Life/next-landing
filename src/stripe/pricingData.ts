@@ -1,4 +1,3 @@
-
 import { Price } from "@/types/price";
 
 interface Feature {
@@ -14,12 +13,8 @@ interface TierFeature {
 }
 
 export const getPricingData = async (): Promise<Price[]> => {
-  const apiURL = process.env.NEXT_PUBLIC_MRCARWASH_API;
-
-  if (!apiURL) {
-    throw new Error("NEXT_PUBLIC_MRCARWASH_API environment variable is not defined.");
-  }
-
+  const apiURL =
+    process.env.NEXT_PUBLIC_MRCARWASH_API || "https://reg.mrcarwash.app/api";
   try {
     const response = await fetch(`${apiURL}/tier-features`);
 
@@ -38,7 +33,6 @@ export const getPricingData = async (): Promise<Price[]> => {
       offers: item.features.map((feature) => feature.description),
     }));
   } catch (error: any) {
-    console.error("Error fetching pricing data:", error);
-    throw error; // Re-throw the error to be handled by the caller
+    throw error;
   }
 };
