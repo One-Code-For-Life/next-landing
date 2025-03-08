@@ -83,16 +83,16 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
               <div className="my-1 mx-auto">
                 <div className="-mx-3 flex items-center justify-center">
                   <Link
-                    href="/#"
-                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-white hover:underline"
+                    href="/privacy"
+                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-blue-500 hover:underline"
                   >
-                    Privacy policy
+                    Kebijakan Privasi
                   </Link>
                   <Link
-                    href="/#"
-                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-white hover:underline"
+                    href="/tos"
+                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-blue-500 hover:underline"
                   >
-                    Terms of service
+                    Syarat & Ketentuan Layanan
                   </Link>
                 </div>
               </div>
