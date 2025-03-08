@@ -32,7 +32,7 @@ const Hero = () => {
               >
                 <Image className="mx-auto pb-4" src="https://ucarecdn.com/71baba41-88cc-4985-8cc3-046fdbee6436/-/preview/500x500/" alt="MrCarWash Logo" width={100} height={100} />
                 <h1 className="mb-6 text-3xl font-bold leading-[1] text-black dark:text-white sm:leading-[1.1] lg:text-4xl lg:leading-[1.2] font-secondary">
-                  Kelola Bisnis Car Wash Dalam Genggaman!
+                  Kelola Bisnis Pencucian Mobil & Motor Dalam Genggaman!
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-black dark:text-white sm:text-lg sm:leading-[1.44]">
                   MrCarWash bukan sekadar{" "}
