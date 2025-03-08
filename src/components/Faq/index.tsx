@@ -8,7 +8,7 @@ const Faq = () => {
         <SectionTitle
           subtitle="FAQ"
           title="Pertanyaan yang Sering Diajukan"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Temukan jawaban atas pertanyaan umum tentang produk, layanan, atau topik lainnya di sini."
           width="640px"
           center
         />

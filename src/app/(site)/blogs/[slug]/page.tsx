@@ -1,5 +1,3 @@
-import Newsletter from "@/components/Blog/Newsletter";
-import PopularArticle from "@/components/Blog/PopularArticle";
 import SingleBlog from "@/components/Blog/SingleBlog";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { getAllPosts, getPostBySlug } from "@/utils/markdown";
@@ -13,7 +11,6 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props) {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
   const post = getPostBySlug((await params).slug, [
     "title",
     "author",
@@ -79,9 +76,9 @@ export default async function Post({ params }: Props) {
 
   return (
     <>
-      <Breadcrumb pageName="Blog Details" />
+      <Breadcrumb pageName="Detail Artikel" />
 
-      <section className="pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+      <section className="pb-10 pt-20 dark:bg-[#18181a] lg:pb-20 lg:pt-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4">
@@ -170,49 +167,12 @@ export default async function Post({ params }: Props) {
                 </div>
               </div>
               <div className="-mx-4 flex flex-wrap">
-                <div className="w-full px-4 lg:w-8/12">
+                <div className="w-full px-4">
                   <div className="blog-details xl:pr-10">
                     <div dangerouslySetInnerHTML={{ __html: content }}></div>
                   </div>
                 </div>
-                <div className="w-full px-4 lg:w-4/12">
-                  <div>
-                    <Newsletter />
 
-                    <div className="-mx-4 mb-8 flex flex-wrap">
-                      <div className="w-full px-4">
-                        <h2
-                          className="wow fadeInUp relative pb-5 text-2xl font-semibold text-dark dark:text-white sm:text-[28px]"
-                          data-wow-delay=".1s"
-                        >
-                          Popular Articles
-                        </h2>
-                        <span className="mb-10 inline-block h-[2px] w-20 bg-blue-700"></span>
-                      </div>
-                      {posts.slice(0, 3).map((blog, i) => (
-                        <PopularArticle
-                          key={i}
-                          image={blog?.coverImage}
-                          title={blog?.title.slice(0, 30)}
-                          name={blog?.author}
-                        />
-                      ))}
-                    </div>
-
-                    <div
-                      className="wow fadeInUp mb-12 overflow-hidden rounded"
-                      data-wow-delay=".1s"
-                    >
-                      <Image
-                        src="/images/blog/bannder-ad.png"
-                        alt="image"
-                        className="w-full"
-                        width={408}
-                        height={254}
-                      />
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

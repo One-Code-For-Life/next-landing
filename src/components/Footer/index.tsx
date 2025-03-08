@@ -13,28 +13,28 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
       data-wow-delay=".15s"
     >
       <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2">
-            <div className="mb-10 w-full flex flex-row gap-8">
-              <Link href="/" className="mb-6 inline-block max-w-[160px]">
-                <Image
-                  src="https://ucarecdn.com/71baba41-88cc-4985-8cc3-046fdbee6436/-/preview/641x641/"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="max-w-full"
-                />
-              </Link>
-              <div className="mb-10 w-full">
-                <p className="mb-8 max-w-[270px] text-base text-gray-900 dark:text-gray-100">
-                  MrCarWash bukan sekadar Point of Sale (POS) biasa, melainkan platform manajemen bisnis pencucian mobil dan motor lengkap yang dirancang khusus untuk mengoptimalkan manajemen bisnis pencucian mobil dan motor Anda.
-                </p>
-              </div>
+        <div className="w-full flex flex-col sm:flex-row">
+          <div className="w-full flex flex-col sm:flex-row gap-4 sm:gap-8 items-center sm:items-start justify-start">
+
+            <Link href="/" className="mb-6 inline-block max-w-[160px]">
+              <Image
+                src="https://ucarecdn.com/71baba41-88cc-4985-8cc3-046fdbee6436/-/preview/641x641/"
+                alt="logo"
+                width={140}
+                height={30}
+                className="max-w-full"
+              />
+            </Link>
+            <div className="w-full items-center sm:items-start">
+              <p className="mb-8 text-center sm:text-left text-base text-gray-900 dark:text-gray-100">
+                MrCarWash bukan sekadar Point of Sale (POS) biasa, melainkan platform manajemen bisnis pencucian mobil dan motor lengkap yang dirancang khusus untuk mengoptimalkan manajemen bisnis pencucian mobil dan motor Anda.
+              </p>
             </div>
+
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
-            <div className="mb-10 w-full">
-              <h4 className="mb-9 text-lg font-semibold text-gray-900 dark:text-gray-100">
+          <div className="w-full px-4 text-center sm:text-right">
+            <div className="w-full">
+              <h4 className="mb-4 text-lg font-semibold text-gray-900 dark:text-gray-100">
                 Tautan Terkait
               </h4>
               <ul>
@@ -83,16 +83,16 @@ dark:from-gray-900/30 dark:to-[#09090b] pt-20 lg:pt-[100px]"
               <div className="my-1 mx-auto">
                 <div className="-mx-3 flex items-center justify-center">
                   <Link
-                    href="/#"
-                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-white hover:underline"
+                    href="/privacy"
+                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-blue-500 hover:underline"
                   >
-                    Privacy policy
+                    Kebijakan Privasi
                   </Link>
                   <Link
-                    href="/#"
-                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-white hover:underline"
+                    href="/tos"
+                    className="px-3 text-base text-gray-800 dark:text-gray-200 hover:text-blue-500 hover:underline"
                   >
-                    Terms of service
+                    Syarat & Ketentuan Layanan
                   </Link>
                 </div>
               </div>

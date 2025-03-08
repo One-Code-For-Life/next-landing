@@ -7,7 +7,7 @@ const PricingBox = ({ product }: { product: Price }) => {
     <div className="w-full px-4 md:w-1/2 lg:w-1/3">
       <div className="relative h-full z-10 mb-10 overflow-hidden rounded-xl bg-white px-6 py-8 shadow-[0px_0px_40px_0px_rgba(0,0,0,0.08)] dark:bg-[#18181a] sm:px-8 sm:py-10 lg:px-6 lg:py-8 xl:px-10 xl:py-12">
         {product.nickname === "MPV" && (
-          <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-md text-sm font-medium">
+          <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-md text-sm font-medium">
             Recommended
           </div>
         )}
@@ -41,7 +41,7 @@ const PricingBox = ({ product }: { product: Price }) => {
             </ul>
           </div>
           <div className="flex w-full justify-self-end mt-auto">
-            <Link href="https://reg.mrcarwash.app" className="w-full rounded-md bg-primary px-4 py-2 text-center text-base font-medium text-white transition duration-300 hover:bg-primary/90">
+            <Link href="https://reg.mrcarwash.app" className="w-full rounded-md bg-blue-600 px-4 py-2 text-center text-base font-medium text-white transition duration-300 hover:bg-primary/90">
               Daftar Sekarang
             </Link>
           </div>

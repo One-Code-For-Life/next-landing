@@ -7,6 +7,9 @@
 .yarn/install-state.gz
 .nixpacks
 
+robots.txt
+sitemap*.xml
+
 # testing
 /coverage
 

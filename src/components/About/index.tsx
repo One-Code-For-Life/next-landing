@@ -26,7 +26,7 @@ const About = () => {
               mobil dan motor nomor satu di Indonesia, dengan menyediakan solusi
               inovatif dan terpercaya.
             </p>
-            <p className="text-gray-600 dark:text-gray-200">
+            <div className="text-gray-600 dark:text-gray-200">
               <strong>Misi:</strong>
               <ul className="pl-4 list-outside list-disc">
                 <li>
@@ -46,12 +46,12 @@ const About = () => {
                   saling mendukung.
                 </li>
               </ul>
-            </p>
+            </div>
 
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white font-secondary mt-6">
               Nilai-Nilai Kami:
             </h3>
-            <p className="text-gray-600 dark:text-gray-200">
+            <div className="text-gray-600 dark:text-gray-200">
               <ul className="pl-4 list-outside list-disc">
                 <li>
                   <strong>Inovasi:</strong> Kami terus berinovasi untuk menghadirkan fitur-fitur terbaru yang sesuai dengan kebutuhan bisnis Anda.
@@ -69,12 +69,12 @@ const About = () => {
                   <strong>Dukungan:</strong> Kami menyediakan dukungan pelanggan yang responsif dan siap membantu Anda kapan saja.
                 </li>
               </ul>
-            </p>
+            </div>
 
             <h3 className="mb-4 text-2xl font-semibold text-gray-800 dark:text-white font-secondary mt-6">
               Keunggulan MrCarWash
             </h3>
-            <p className="text-gray-600 dark:text-gray-200">
+            <div className="text-gray-600 dark:text-gray-200">
               <ul className="pl-4 list-outside list-disc">
                 <li>
                   <strong>Platform Terintegrasi:</strong> Kelola semua aspek bisnis Anda dalam satu platform, mulai dari operasional, karyawan, pelanggan, hingga keuangan.
@@ -92,7 +92,7 @@ const About = () => {
                   <strong>Harga Terjangkau:</strong> Paket berlangganan yang fleksibel dan sesuai dengan anggaran bisnis Anda.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
         <div className="mt-10 text-center">
